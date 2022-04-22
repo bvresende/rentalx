@@ -1,13 +1,12 @@
 {
   "env": {
-    "es2021": true,
+    "es2020": true,
+    "node": true,
     "jest": true
   },
   "extends": [
     "airbnb-base",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "plugin:prettier/recommended"
+    "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -16,8 +15,7 @@
   },
   "plugins": [
     "@typescript-eslint",
-    "eslint-plugin-import-helpers",
-    "prettier"
+    "eslint-plugin-import-helpers"
   ],
   "rules": {
     "camelcase": "off",
@@ -75,8 +73,7 @@
           "**/*.spec.js"
         ]
       }
-    ],
-    "prettier/prettier": "error"
+    ]
   },
   "settings": {
     "import/resolver": {
